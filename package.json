@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "build-apk": "cd ./android && ./gradlew assembleRelease",
     "debugger": "REACT_DEBUGGER='rndebugger-open --port 8081' ./react-native-debugger/reactNativeDebugger",
     "start": "node node_modules/react-native/local-cli/cli.js start & npm run debugger",
     "start-server": "nodemon --exec babel-node src/Server/index.js",
